@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Konversi Mata Uang</title>
+    <script type="text/javascript" src="latjs1.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap alert</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+          background-image: url('ACU_Wallpaper_Portrait.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+    
+    <script type="text/javascript">
+        function poundsterlingrupiah(){
+        let poundsterling = document.getElementById('duit').value;
+        let hasil = poundsterling * 17.998 ;
+        document.getElementById('hasil').value = hasil;
+        }
+    
+        function eurorupiah(){
+        let euro = document.getElementById('duit').value;
+        let hasil = euro * 15.052;
+        document.getElementById('hasil').value = hasil;
+        }
+    
+        function DSrupiah(){
+        let DS = document.getElementById('duit').value;
+        let hasil =  DS + 9.857;
+        document.getElementById('hasil').value = hasil;
+        }
+        function dirhamrupiah(){
+        let dirham= document.getElementById('duit').value;
+        let hasil = dirham * 3.800;
+        document.getElementById('hasil').value = hasil;
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card col-sm-4">
+            <div class="card-header">
+                <h2> Konversi Mata Uang </h2>
+            </div>
+            Inputkan nilai
+            <input type="number" id="duit" class="form-control">
+           
+            </button>
+            <button type="button" class="btn btn-info btn-block" id="poundsterlingrupiah" onclick="poundsterlingrupiah()">
+                Convert poundsterling to rupiah
+            </button>
+
+            <button type="button" class="btn btn-secondary btn-block" id="eurorupiah" onclick="eurorupiah()">
+                Convert euro to rupiah
+            </button>
+            <button type="button" class="btn btn-primary btn-block" id="DSrupiah" onclick="DSrupiah()">
+                Convert DS to rupiah
+            </button>
+            <button type="button" class="btn btn-primary btn-block" id="dirhamrupiah" onclick="dirhamrupiah()">
+                Convert dirham to rupiah
+            </button>
+            Hasil
+            <input type="number" id="hasil" class="form-control" readonly>
+
+</body>
+
+</html>
+</script>
